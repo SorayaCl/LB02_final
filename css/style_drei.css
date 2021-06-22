@@ -1,0 +1,119 @@
+body {
+    font-weight: normal;
+    background-color: #D6E6FF;
+}
+
+main {
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    height:30px;
+
+}
+
+p{
+    font-weight: normal;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+
+    color: #5390d9;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:"TheSans Swisscom";
+}
+
+ul {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #D6E6FF;
+    font-weight: bold;
+
+}
+
+
+.list-inline {
+    padding-left: 85px;
+
+}
+
+.mb-3 {
+    height: 100px;
+    width: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    padding-top: 10px;
+    padding-bottom:80px;
+}
+
+.grid-item1 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item2 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item3 {
+    padding: 20px;
+    font-size: 30px;
+
+}
+.grid-item4 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item5 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row{
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+
+}
+.container py-5 {
+    padding-top: 30px;
+}

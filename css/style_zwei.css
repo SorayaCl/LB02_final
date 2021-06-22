@@ -1,0 +1,109 @@
+body {
+    font-weight: normal;
+    background-color: #D6E6FF;
+}
+
+main {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+footer {
+    height:30px;
+
+}
+
+p{
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img{
+    height: 110px;
+    width: auto;
+
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+
+    color: #5390d9;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:"TheSans Swisscom";
+}
+
+ul {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #D6E6FF;
+    font-weight: bold;
+
+}
+
+.container {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    padding-top: 30px;
+
+}
+@media screen and (min-width: 44.001em) {
+    .container {
+        grid-template-rows: 120px 1fr 100px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+.container2{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: 992px)  {
+    .py-5 {
+        max-width: 960px;
+    }
+}
+
+
+.list-inline {
+    padding-left: 85px;
+
+}
+
+.mb-3 {
+    height: 100px;
+    width: auto;
+}
+
+.row {
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 200px;
+}
