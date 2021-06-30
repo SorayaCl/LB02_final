@@ -7,7 +7,7 @@
   <title>Soraya Clausen</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style_zwei.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="home">
@@ -25,48 +25,65 @@
   </ul>
   </header>
 
-  <main>
+  <main class="second">
 
-  <div class="container">
-    <div><img src="pics/sonnenuntergang.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/schnee_sonnenuntergang.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/sonnenuntergang_eins.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/sonnenuntergang_bali.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/red.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/blue.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/tessin.jpg" alt="Portrait Soraya"></div>
-    <div><img src="pics/locarno.jpg" alt="Portrait Soraya"></div>
-  </div>
-
-
-
-
-
-
+    <section id="galerie">
+      <figure tabindex="1"> <img src="pics/sonnenuntergang.jpg" alt="Sonnenuntergang">
+        <figcaption>Sonnenuntergang</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/sonnenuntergang_dieses_jahr.JPG" alt="Sonnenuntergang 2021">
+        <figcaption>Sonnenuntergang 2021</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/sonnenuntergang_eins.jpg" alt="Sonnenuntergang 1">
+        <figcaption>Miami Beach</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/sonnenuntergang_bali.jpg" alt="Sonnenuntergang Bali">
+        <figcaption>Bali</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/roter_sonnenuntergang.JPG" alt="Sonnenuntergang auf Autobahn">
+        <figcaption>Roter Sonnenuntergang</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/red.jpg" alt="Shop in Amerika">
+        <figcaption>Store in USA</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/new_york.jpg" alt="New York aussicht">
+        <figcaption>New York</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/blue.jpg" alt="Wand mit Grafitti">
+        <figcaption>Graffiti</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/locarno.jpg" alt="Locarno See">
+        <figcaption>Locarno</figcaption>
+      </figure>
+      <figure tabindex="1"> <img src="pics/tessin.jpg" alt="See im Tessin">
+        <figcaption>Tessin</figcaption>
+      </figure>
+    </section>
 
 
   </main>
-
   <footer class="bg-white">
-    <div class="py-5">
+    <div class="container py-5">
       <div class="row py-4">
         <div
                 class="col-lg-4 col-md-6 mb-4 mb-lg-0" width="180" class="mb-3">
           <h6 class="text-uppercase font-weight-bold mb-4">Social Media</h6>
-          <p class="font-italic text-muted">Hier unten verlinkt findet ihr mein Instagram, Snapchat und Pinterest Profil.</p>
-          <ul class="list-inline mt-4">
-            <li class="list-inline-item"><a href="https://www.instagram.com/sosochia/?hl=de" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="https://accounts.snapchat.com/" target="_blank" title="Snapchat"><i class="fa fa-snapchat"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.pinterest.de/" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-          </ul>
+          <p class="text-muted mb 4">Hier unten verlinkt findet ihr mein Instagram, Snapchat und Pinterest Profil.</p>
+          <div class="social-btns list-inline mt-4 bg-light">
+            <a type="button" class="btn-floating btn-lg btn-instagrams" href="https://www.instagram.com/sosochia/?hl=de" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
+            <a type="button" class="btn-floating btn-lg btn-snapchat" href="https://accounts.snapchat.com/" target="_blank" title="Snapchat"><i class="fa fa-snapchat"></i></a>
+            <a type="button" class="btn-floating btn-lg btn-pinterest" href="https://www.pinterest.de/" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">E-Mail</h6>
           <p class="text-muted mb-4"> Bei Fragen könnt ihr mich gerne via E-Mail kontaktieren.</p>
           <div class="border">
-            <div class="input-group">
-              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-              <div class="input-group-append">
+            <div class="input-group bg-light">
+              <a class="mail-text" href = "mailto:clausens@bzz.ch">
+                Send Feedback
+              </a>
+              <div class="group-append">
                 <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
               </div>
             </div>
@@ -77,7 +94,7 @@
 
     <!-- Copyrights -->
     <div class="bg-light py-4">
-      <div class="container2 text-center">
+      <div class="container text-center">
         <p class="text-muted mb-0 py-2">© 2021 Soraya All rights reserved.</p>
       </div>
     </div>
