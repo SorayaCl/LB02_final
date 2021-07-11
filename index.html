@@ -11,12 +11,17 @@
 </head>
 
 <body id="home">
-  <header>
-    <nav>
-    <ul class="nav justify-content-start">
-      <li class="nav-item">
-        <a class="nav-link active">About</a>
-        <span class="sr-only">(current)</span>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Photography.html">Photography</a>
@@ -24,9 +29,9 @@
       <li class="nav-item">
         <a class="nav-link" href="Design.html">Musik</a>
       </li>
-
+    </ul>
       <button onclick="window.location.href = 'https://www.srf.ch/meteo/wetter/Horgen/47.2614,8.5969?geolocationNameId=936a0c8c16fd4eb53aec2197c9cfe5b9';"
-               class="button" target="_blank" style="vertical-align:middle"> <span> Wetter </span> </button>
+              class="button" target="_blank" style="vertical-align:middle"> <span> Wetter </span> </button>
     </ul>
     </nav>
   </header>
@@ -46,17 +51,17 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="d-flex justify-content-center">
-          <img src="pics/soraya_banner.png" class="d-block w-50" alt="Soraya Baum">
+          <img src="pics/soraya_banner.png" class="d-block w-50" alt="Vornahme Soraya">
         </div>
       </div>
       <div class="carousel-item">
         <div class="d-flex justify-content-center">
-        <img src="pics/chiara_banner.png" class="d-block w-50" alt="Bild von Blume">
+        <img src="pics/chiara_banner.png" class="d-block w-50" alt="Zweitname Chiara">
       </div>
       </div>
       <div class="carousel-item">
         <div class="d-flex justify-content-center">
-        <img src="pics/clausen_banner.png" class="d-block w-50" alt="Portrait Soraya">
+        <img src="pics/clausen_banner.png" class="d-block w-50" alt="Nachnahme Clausen">
       </div>
       </div>
     </div>
@@ -83,6 +88,7 @@
         </div>
       </div>
     </div>
+
   </main>
 
     <footer class="bg-white">
@@ -128,5 +134,3 @@
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-

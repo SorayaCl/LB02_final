@@ -27,7 +27,6 @@ p{
 
 li a {
 
-    color: #5390d9;
     text-decoration: none;
     font-size: 20px;
     font-family:"TheSans Swisscom";
@@ -43,7 +42,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
 }
 
 
@@ -129,14 +127,16 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 
-
 .second {
     padding: 100px;
 }
 
 img{
     width: auto;
+}
 
+.img:hover {
+    opacity:4;
 }
 
 @media screen and (min-width: 44.001em) {
@@ -158,6 +158,8 @@ li {
     width: 45%;
 }
 
+
+
 #galerie figure {
     background: #FFF;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -168,6 +170,7 @@ li {
     padding: 0;
     width: 15em;
     transition: all 0.25s ease-in;
+    border: 2px solid #adc6dc;
 }
 
 
@@ -240,11 +243,13 @@ li {
     text-align: center;;
 }
 
+
 .grid-item3 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
 
 }
 .grid-item4 {
@@ -263,6 +268,11 @@ li {
     text-align: center;
 }
 
+.grid-item5:hover{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0 ,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 .grid-item6{
     display: flex;
@@ -320,4 +330,38 @@ li {
 
 .w-50{
     width: 100% !important
+}
+
+.navbar {
+    justify-content: flex-end;
+}
+
+.search {
+    justify-content: flex-end;
+}
+
+.navbar {
+    padding: 0 0;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+
+    color:  #5390d9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #5390d9;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:#005CA3 ;
+}
+
+.navbar-collapse {
+    padding-right: 10px;
+}
+
+.btn-outline-success {
+    color: #5390d9;
+    border-color: #5390d9;
 }
