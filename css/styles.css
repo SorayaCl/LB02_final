@@ -169,14 +169,13 @@ li {
     overflow: hidden;
     padding: 0;
     width: 15em;
-    transition: all 0.25s ease-in;
-    border: 2px solid #adc6dc;
+    transition: all 0.25s ease-in
 }
 
 
 #galerie figure img {
-    width: 15em;
-    height: 15em;
+    height: 100%;
+    width: auto%;
 
 }
 
@@ -364,4 +363,12 @@ li {
 .btn-outline-success {
     color: #5390d9;
     border-color: #5390d9;
+}
+
+.w-60{
+    width: 45% !important
+}
+
+.w-70{
+    width: 15% !important
 }
