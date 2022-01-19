@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <title>Task App</title>
+    <title>Task App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,91 +13,102 @@
 
 <body id="home">
 
-<header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Soraya <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ambra.html">Ambra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Photography.html">Photography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Design.html">Musik</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="todolist.html">To Do</a>
-                </li>
-            </ul>
-            <button onclick="window.location.href = 'https://www.srf.ch/meteo/wetter/Horgen/47.2614,8.5969?geolocationNameId=936a0c8c16fd4eb53aec2197c9cfe5b9';"
-                    class="button" target="_blank" style="vertical-align:middle"> <span> Wetter </span> </button>
-            </ul>
-    </nav>
-</header>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Soraya <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ambra.html">Ambra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Photography.html">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Design.html">Musik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="todolist.html">To Do</a>
+                    </li>
+                </ul>
+                <button onclick="window.location.href = 'https://www.srf.ch/meteo/wetter/Horgen/47.2614,8.5969?geolocationNameId=936a0c8c16fd4eb53aec2197c9cfe5b9';" class="button" target="_blank" style="vertical-align:middle"> <span> Wetter </span> </button>
+                </ul>
+        </nav>
+    </header>
 
-<main>
-    <h1>To do List</h1>
-    <input id="search-text" type="text" placeholder="Aufgaben durchsuchen">
-    <div id="tasks"></div>
-    <form id="new-task">
-        <input type="text" placeholder="Was gibt es neues:)" name="text">
-        <button><img class="add" src="pics/add_icon.png" </img></button>
-    </form>
 
-</main>
 
-<footer class="bg-white">
-    <div class="container py-5">
-        <div class="row py-4">
-            <div
-                    class="col-lg-4 col-md-6 mb-4 mb-lg-0" width="180" class="mb-3">
-                <h6 class="text-uppercase font-weight-bold mb-4">Social Media</h6>
-                <p class="text-muted mb 4">Hier unten verlinkt findet ihr Instagram, Snapchat und Pinterest.</p>
-                <div class="social-btns list-inline mt-4 bg-light">
-                    <a type="button" class="btn-floating btn-lg btn-instagrams" href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
-                    <a type="button" class="btn-floating btn-lg btn-snapchat" href="https://accounts.snapchat.com/" target="_blank" title="Snapchat"><i class="fa fa-snapchat"></i></a>
-                    <a type="button" class="btn-floating btn-lg btn-pinterest" href="https://www.pinterest.de/" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+    <main class="to-do">
+        <h1 class="TitelToDo">To do List</h1>
+        <button id="both-buttons" class="showUsualButtons" onclick="showButtons()">Show Usual Tasks</button>
+        <button id="both-buttons" class="hideUsualButtons" onclick="hideButtons()">Hide Usual Tasks</button>
+        <div class="usualButtons" id="usualButtons">
+            <button class="usual" onclick="whatButton(0)">Einkaufen</button>
+            <button class="usual" onclick="whatButton(1)">Waschen</button>
+            <button class="usual" onclick="whatButton(2)">Lernen</button>
+            <button class="usual" onclick="whatButton(3)">Staubsaugen</button>
+            <button class="usual" onclick="whatButton(4)">Hausaufgaben</button>
+            <button class="usual" onclick="whatButton(5)">Kochen</button>
+            <button class="usual" onclick="whatButton(6)">Tischdecken</button>
+        </div>
+        <div class="TitelTask" id="tasks"></div>
+        <form id="new-task">
+            <input class="newTask" type="text" placeholder="Create new Task" name="text">
+            <button id="addButton"> <img class="add" src="pics/Plus.png"> </button>
+            <input id="search-text" type="text" placeholder="Search Task">
+        </form>
+
+    </main>
+
+    <footer class="bg-white">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" width="180" class="mb-3">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Social Media</h6>
+                    <p class="text-muted mb 4">Hier unten verlinkt findet ihr Instagram, Snapchat und Pinterest.</p>
+                    <div class="social-btns list-inline mt-4 bg-light">
+                        <a type="button" class="btn-floating btn-lg btn-instagrams" href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
+                        <a type="button" class="btn-floating btn-lg btn-snapchat" href="https://accounts.snapchat.com/" target="_blank" title="Snapchat"><i class="fa fa-snapchat"></i></a>
+                        <a type="button" class="btn-floating btn-lg btn-pinterest" href="https://www.pinterest.de/" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">E-Mail</h6>
-                <p class="text-muted mb-4"> Bei Fragen könnt ihr uns gerne via E-Mail kontaktieren.</p>
-                <div class="border">
-                    <div class="input-group bg-light">
-                        <a class="mail-text" href = "mailto:clausens@bzz.ch, antoellia@bzz.ch">
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">E-Mail</h6>
+                    <p class="text-muted mb-4"> Bei Fragen könnt ihr uns gerne via E-Mail kontaktieren.</p>
+                    <div class="border">
+                        <div class="input-group bg-light">
+                            <a class="mail-text" href="mailto:clausens@bzz.ch, antoellia@bzz.ch">
                             Send Feedback
                         </a>
-                        <div class="group-append">
-                            <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                            <div class="group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Copyrights -->
-    <div class="bg-light py-4">
-        <div class="container text-center">
-            <p class="text-muted mb-0 py-2">© 2022 Soraya&Ambra All rights reserved.</p>
+        <!-- Copyrights -->
+        <div class="bg-light py-4">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">© 2022 Soraya&Ambra All rights reserved.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="js/task_last.js"></script>
-<script src="js/task_functions.js"></script>
-<script src="js/task_app.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/task_last.js"></script>
+    <script src="js/task_functions.js"></script>
+    <script src="js/task_app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

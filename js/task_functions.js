@@ -7,7 +7,7 @@ const getSavedTasks = () => {
 
     try {
         //if tasksJSON contains data
-        if (tasksJSON){
+        if (tasksJSON) {
             return JSON.parse(tasksJSON);
         } else {
             return [];
@@ -37,6 +37,7 @@ const removeTask = (id) => {
         tasks.splice(taskIndex, 1);
     }
 }
+
 
 // Toggle the completed value for a given task
 const toggleTask = (id) => {

@@ -1,5 +1,43 @@
 'use strict'
 
+let usual = [{
+        "task": "Einkaufen"
+    },
+    {
+        "task": "Waschen"
+    },
+    {
+        "task": "Lernen"
+    },
+    {
+        "task": "Staubsaugen"
+    },
+    {
+        "task": "Hausaufgaben"
+    },
+    {
+        "task": "Kochen"
+    },
+    {
+        "task": "Tischdecken"
+    }
+
+]
+
+let taskNumber = 0
+
+function whatButton(number) {
+    taskNumber = number
+};
+
+function showButtons() {
+    document.getElementById("usualButtons").style.display = "block"
+}
+
+function hideButtons() {
+    document.getElementById("usualButtons").style.display = "none"
+}
+
 //get task list as JSON-object format
 let tasks = getSavedTasks();
 
@@ -25,6 +63,24 @@ document.querySelector('#search-text')
     })
 
 
+/**
+ * Event for a new task
+ */
+const usualButtons = document.querySelectorAll(".usualButtons");
+for (let i = 0; i < usualButtons.length; i++) {
+    usualButtons[i].addEventListener("click", function() {
+        //add new task with push-method into JSON-object
+        tasks.push({
+            id: uuidv4(),
+            text: usual[taskNumber].task,
+            completed: false
+        });
+        //save tasks
+        saveTasks(tasks);
+        //show tasks
+        renderTasks(tasks, filters);
+    });
+}
 /**
  * Event for a new task
  */

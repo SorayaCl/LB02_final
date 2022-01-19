@@ -9,27 +9,23 @@ body {
 }
 
 footer {
-    height:30px;
-
+    height: 30px;
 }
 
-p{
+p {
     font-weight: normal;
-
 }
 
-.row{
+.row {
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 80px;
-
 }
 
 li a {
-
     text-decoration: none;
     font-size: 20px;
-    font-family:"TheSans Swisscom";
+    font-family: "TheSans Swisscom";
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -44,11 +40,9 @@ ul {
     overflow: hidden;
 }
 
-
 li a:hover {
     background-color: #D6E6FF;
     font-weight: bold;
-
 }
 
 #banner {
@@ -64,7 +58,6 @@ li a:hover {
     height: auto;
     width: auto;
 }
-
 
 .marketing .col-lg-4 {
     text-align: center;
@@ -82,7 +75,8 @@ li a:hover {
     transition: all 0.5s;
     cursor: pointer;
     margin: 10px;
-    position: absolute; right: 25px;
+    position: absolute;
+    right: 25px;
 }
 
 .button span {
@@ -92,7 +86,6 @@ li a:hover {
     transition: 0.5s;
 }
 
-
 .button span:after {
     content: '\00bb';
     position: absolute;
@@ -101,6 +94,7 @@ li a:hover {
     right: -20px;
     transition: 0.5s;
 }
+
 .button:hover span {
     padding-right: 20px;
 }
@@ -110,12 +104,13 @@ li a:hover {
     right: 0;
 }
 
-a:not([href]):not([tabindex]){
-    color:#5390d9;
+a:not([href]):not([tabindex]) {
+    color: #5390d9;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-    color:#0056b3;
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+    color: #0056b3;
 }
 
 .picture {
@@ -126,17 +121,16 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     height: auto;
 }
 
-
 .second {
     padding: 100px;
 }
 
-img{
+img {
     width: auto;
 }
 
 .img:hover {
-    opacity:4;
+    opacity: 4;
 }
 
 @media screen and (min-width: 44.001em) {
@@ -145,20 +139,18 @@ img{
         grid-template-columns: 25% 25% 25% 25%;
     }
 }
-@media (min-width: 1200px)  {
+
+@media (min-width: 1200px) {
     .py-5 {
         max-width: 1140px;
     }
 }
-
 
 li {
     display: inline-block;
     list-style-type: none;
     width: 45%;
 }
-
-
 
 #galerie figure {
     background: #FFF;
@@ -172,11 +164,9 @@ li {
     transition: all 0.25s ease-in
 }
 
-
 #galerie figure img {
     height: 100%;
     width: auto%;
-
 }
 
 #galerie figure:hover,
@@ -192,12 +182,10 @@ li {
     color: #333;
     font: cursive 10px/150%;
     font-family: "Reenie Beanie", cursive;
-    position:relative;
+    position: relative;
     text-align: center;
     width: 15em;
 }
-
-
 
 .third {
     padding-right: 100px;
@@ -206,26 +194,21 @@ li {
 }
 
 
-
 /* Large screens */
+
 @media all and (min-width: 35em) {
     li {
         width: 10em;
     }
-
 }
-
-
 
 .grid-container {
     display: grid;
     grid-gap: 50px 100px;
     grid-template-columns: auto auto auto;
     padding-top: 10px;
-    padding-bottom:80px;
+    padding-bottom: 80px;
     justify-content: space-around;
-
-
 }
 
 .grid-item1 {
@@ -236,21 +219,21 @@ li {
     justify-content: left;
     align-items: center;
 }
+
 .grid-item2 {
     padding: 20px;
     font-size: 30px;
-    text-align: center;;
+    text-align: center;
+    ;
 }
-
 
 .grid-item3 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
-
 }
+
 .grid-item4 {
     padding: 20px;
     font-size: 30px;
@@ -260,62 +243,60 @@ li {
     align-items: center;
 }
 
-
 .grid-item5 {
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
 
-.grid-item5:hover{
+.grid-item5:hover {
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0 ,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.grid-item6{
+.grid-item6 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.btn-lg, .btn-group-lg > .btn {
- font-size: 1.50rem;
-
-
+.btn-lg,
+.btn-group-lg>.btn {
+    font-size: 1.50rem;
 }
 
-.bg-light{
+.bg-light {
     display: flex;
     justify-content: space-around;
 }
 
-.mail-text{
+.mail-text {
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.input-group{
+
+.input-group {
     justify-content: space-between;
     padding: 0 20px 0 20px;
     width: 75%;
     height: 50px;
-
 }
 
-.group-append{
+.group-append {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: unset;
 }
 
-.border{
+.border {
     border: 0 solid !important;
 }
 
@@ -323,11 +304,11 @@ li {
     font-style: normal !important;
 }
 
-.text-muted{
+.text-muted {
     font-size: 17px;
 }
 
-.w-50{
+.w-50 {
     width: 100% !important
 }
 
@@ -343,17 +324,20 @@ li {
     padding: 0 0;
 }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-
-    color:  #5390d9;
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #5390d9;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #5390d9;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color:#005CA3 ;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #005CA3;
 }
 
 .navbar-collapse {
@@ -365,11 +349,108 @@ li {
     border-color: #5390d9;
 }
 
-.w-60{
+.w-60 {
     width: 45% !important
 }
 
-.w-70{
+.w-70 {
     width: 15% !important
+}
+
+main {
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add {
+    width: 10px;
+}
+
+.usual {
+    color: white;
+    background-color: #7CABE1;
+    border-color: #7CABE1;
+    margin-bottom: 15px;
+}
+
+.usualButtons {
+    display: none;
+}
+
+.to-do {
+    display: flex;
+    height: 70vh;
+    font-family: "TheSans Swisscom";
+
+}
+.showUsualButtons {
+    margin-bottom: 15pt;
+    background-color: #5390d9;
+    border-color: #5390d9;
+    color: white;
+    margin-right: 150px;
+}
+
+.hideUsualButtons {
+    margin-top: -60pt;
+    background-color: #5390d9;
+    border-color: #5390d9;
+    color: white;
+    margin-left: 150px;
+}
+
+.usualButtons {
+    margin-bottom: 20px;
+}
+
+#addButton{
+    background-color: #5390d9;
+    border-color: #5390d9;
+}
+#search-text {
+    background-color: #D7E5FF;
+    border-color: white;
+}
+
+.newTask {
+    background-color: #D7E5FF;
+    border-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.TitelToDo {
+    color: #7CABE1;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 100px;
+
+}
+
+#both-buttons {
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.TitelTask {
+    color: #7CABE1;
+    margin-top: 10px;
+}
+
+#tasks {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#search-text {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+h2, .h2 {
+    font-size: 40px;
 }
 
