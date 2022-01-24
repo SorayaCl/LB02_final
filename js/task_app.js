@@ -111,4 +111,4 @@ document.querySelector('#hide-completed')
         filters.hideCompleted = e.target.checked;
         //show tasks
         renderTasks(tasks, filters);
-    })
+    });
