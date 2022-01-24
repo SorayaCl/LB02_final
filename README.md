@@ -1,3 +1,3 @@
 # M287 Project
 ## Intro
-Hallo dies ist meine selbst erstellte Webseite:)
+Hallo dies ist Ambras und meine selbst erstellte Webseite:)
