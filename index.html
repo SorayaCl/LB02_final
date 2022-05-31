@@ -17,89 +17,54 @@
           <img src="pics/pfote.png" width="50" height="50" alt="…">
         </div>
       </nav>
-
         <div class="header">
             <div class="welcome ">
-              <h2>Herzlich Willkommen</h2>
-              <p class="welcome-font">Schön das du auf unserer Webseite gelandet bist:) Du kannst dich kostenlos anmelden und ein Profil für deinen Hund oder für dich als Hundefreund erstellen.
-                Egal ob du beim Arbeiten oder in den Ferien bist dein Hund fühlt sich bei uns wie zuhause.
+              <h3>Herzlich Willkommen</h3>
+              <p class="welcome-font">Schön das du auf unserer Webseite gelandet bist:) Du kannst dich kostenlos für unser Tier-Newsletter registrieren.
               </p>
             </div>
           </div>
     </header>
-
     <main>
         <div class="kontakt">
-        <div class="formular">
-            <form id="form" class="form">
-                <h2>Kontaktiert uns!</h2>
-                <div class="form-control">
-                    <label for="username">Vorname</label>
-                    <input type="text" id="username" />
-                    <small>Error message</small>
-                </div>
-                <div class="form-control">
-                    <label for="username">Nachname</label>
-                    <input type="text" id="username"/>
-                    <small>Error message</small>
-                </div>
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" />
-                    <small>Error message</small>
-                </div>
-                <div class="form-control">
-                    <label for="email">Nummber</label>
-                    <input type="text" id="number" />
-                    <small>Error message</small>
-                </div>
-
-
-                <br>Welche Hunderasse haben Sie?</br>
-                <p>
-                    <select name="thema1">
-                        <option value="val1">Deutscher Schäferhund</option>
-                        <option value="val2" selected>Rottweiler</option>
-                        <option value="val3">Labrador</option>
-                        <option value="val4">Pitbull</option>
-                        <option value="val4">Pudel</option>
-                        <option value="val4">Beagle</option>
-                        <option value="val4">Border Collie</option>
-                        <option value="val4">Sonstiges</option>
-                    </select>
-                </p>
-                <p>
-                <form class="tage">
-                    <p>An welchem Tag sollte ihr Hund betreut werden?</p>
-                    <p>
-                        <input type="checkbox" name="extra" id="c1" >
-                        <label for="c1">Montag</label><br>
-                        <input type="checkbox" name="extra" id="c2" >
-                        <label for="c2">Dienstag</label><br>
-                        <input type="checkbox" name="extra" id="c3">
-                        <label for="c3">Mittwoch</label><br>
-                        <input type="checkbox" name="extra" id="c4" >
-                        <label for="c3">Donnerstag</label><br>
-                        <input type="checkbox" name="extra" id="c5">
-                        <label for="c3">Freitag</label>
-                    </p>
-
-                <p>Bis wann sind Sie in den Ferien</p>
-                <input type="date" value="2015-11-12" min="2015-01-01" max="2015-12-30">
-                <input type="time" value="15:15" min="08:00" max="17:00">
-                <form method="post" enctype="multipart/form-data">
-
-                    <button type="submit">Submit</button>
+            <div class="formular">
+                <form id="form" class="form">
+                    <h2>Registrierung</h2>
+                    <div class="form-control">
+                        <label for="name">Vorname</label>
+                        <input type="text" id="name" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="lastname">Nachname</label>
+                        <input type="text" id="lastname" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="number">Tel.</label>
+                        <input type="tel" id="number" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email"  />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password"  />
+                        <small>Error message</small>
+                    </div>
+                    <button type="submit">FERTIG</button>
                 </form>
-        </div>
-        </div>
+            </div>
 
     </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="./script/validierung.js"></script>
+    <script src="script/validate-inputs.js"></script>
 
     <footer class="bg-white">
       <div class="container py-5">
@@ -134,5 +99,5 @@
 
 
   </footer>
-</body>
-</html>
+ </body>
+ </html>

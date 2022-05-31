@@ -17,8 +17,7 @@ p {
 
 }
 
-.h2 {
-
+h3 {
     color: #826e5a;
 }
 
@@ -36,7 +35,6 @@ p {
 .welcome {
     padding-bottom: 50px;
     justify-content: space-evenly;
-    position: absolute;
     color: #826e5a;
     text-align: center;
     background-color:#eddcd2;
@@ -54,12 +52,11 @@ p {
 
 .kontakt {
 
-    margin: 20vh 10px 20px 10px;
+    margin: 20px 10px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
 }
 
 .row {
@@ -72,38 +69,7 @@ p {
     flex-wrap: wrap;
 }
 
-.no-flex-grow {
-    flex-grow: 0;
-}
 
-li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "TheSans Swisscom";
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-}
-
-
-.datei {
-
-    margin-top: 10px;
-}
-
-
-ul {
-    position: sticky;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li a:hover {
-    background-color: #758173;
-    font-weight: bold;
-}
 
 #banner {
     margin: 50px;
@@ -112,16 +78,6 @@ li a:hover {
     background-color: #758173;
 }
 
-.carousel-item {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    height: auto;
-    width: auto;
-}
-
-.marketing .col-lg-4 {
-    text-align: center;
-}
 .bd-placeholder-img rounded-circle {
     align-items: baseline;
 }
@@ -139,7 +95,7 @@ li a:hover {
 
 
 :root {
-    --success-color: #2ecc71;
+    --success-color: #3498db;
     --error-color: #e74c3c;
 }
 
@@ -156,6 +112,7 @@ li a:hover {
 }
 
 h2 {
+    color: #826e5a;
     text-align: center;
     margin: 0 0 20px;
 }
@@ -168,6 +125,7 @@ h2 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
+    border: none;
 }
 
 .form-control label {
@@ -177,12 +135,15 @@ h2 {
 }
 
 .form-control input {
-    border: 2px solid #f0f0f0;
+
+    border: 2px solid #eddcd2;
     border-radius: 4px;
     display: block;
     width: 100%;
     padding: 10px;
     font-size: 14px;
+    background-color:#eddcd2;
+
 }
 
 .form-control input:focus {
@@ -213,8 +174,8 @@ h2 {
 
 .form button {
     cursor: pointer;
-    background-color: #3498db;
-    border: 2px solid #3498db;
+    background-image: radial-gradient(circle, #cb997e 50%, #eddcd2 100%);
+    border: 0px solid #eddcd2;
     border-radius: 4px;
     color: #fff;
     display: block;
@@ -222,4 +183,5 @@ h2 {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+
 }
