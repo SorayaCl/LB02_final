@@ -10,92 +10,96 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="home">
-
-<header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Soraya <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ambra.html">Ambra</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Photography.html">Photography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Design.html">Musik</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="todolist.html">To Do</a>
-      </li>
-    </ul>
-      <button onclick="window.location.href = 'https://www.srf.ch/meteo/wetter/Horgen/47.2614,8.5969?geolocationNameId=936a0c8c16fd4eb53aec2197c9cfe5b9';"
-              class="button" target="_blank" style="vertical-align:middle"> <span> Wetter </span> </button>
-    </ul>
-    </nav>
-  </header>
-
-
-
-  <main class="first">
-
-  <div id="banner">
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center">
-          <img src="pics/soraya_banner.png" class="d-block w-50" alt="Vornahme Soraya">
+  <body id="home">
+    <header>
+      <nav class="navbar">
+        <div class="flex">
+          <img src="pics/pfote.png" width="50" height="50" alt="…">
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-        <img src="pics/chiara_banner.png" class="d-block w-50" alt="Zweitname Chiara">
-      </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-        <img src="pics/clausen_banner.png" class="d-block w-50" alt="Nachnahme Clausen">
-      </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  </div>
+      </nav>
 
-    <div class="container marketing">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="picture" src="pics/ich.JPG" alt="Bild von mir" style="width:200px" width="160" height="145">
-          <h2>Soraya Clausen</h2>
-          <p>Hallo zusammen dies ist meine Webseite <br> Viel Spass:)</p>
-          <p>
-            <a class="btn btn-secondary" role="button" href="mailto:clausens@bzz.ch">E-Mail</a>
-          </p>
+        <div class="header">
+            <div class="welcome ">
+              <h2>Herzlich Willkommen</h2>
+              <p class="welcome-font">Schön das du auf unserer Webseite gelandet bist:) Du kannst dich kostenlos anmelden und ein Profil für deinen Hund oder für dich als Hundefreund erstellen.
+                Egal ob du beim Arbeiten oder in den Ferien bist dein Hund fühlt sich bei uns wie zuhause.
+              </p>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <div class="kontakt">
+        <div class="formular">
+            <form id="form" class="form">
+                <h2>Kontaktiert uns!</h2>
+                <div class="form-control">
+                    <label for="username">Vorname</label>
+                    <input type="text" id="username" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Nachname</label>
+                    <input type="text" id="username"/>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Nummber</label>
+                    <input type="text" id="number" />
+                    <small>Error message</small>
+                </div>
+
+
+                <br>Welche Hunderasse haben Sie?</br>
+                <p>
+                    <select name="thema1">
+                        <option value="val1">Deutscher Schäferhund</option>
+                        <option value="val2" selected>Rottweiler</option>
+                        <option value="val3">Labrador</option>
+                        <option value="val4">Pitbull</option>
+                        <option value="val4">Pudel</option>
+                        <option value="val4">Beagle</option>
+                        <option value="val4">Border Collie</option>
+                        <option value="val4">Sonstiges</option>
+                    </select>
+                </p>
+                <p>
+                <form class="tage">
+                    <p>An welchem Tag sollte ihr Hund betreut werden?</p>
+                    <p>
+                        <input type="checkbox" name="extra" id="c1" >
+                        <label for="c1">Montag</label><br>
+                        <input type="checkbox" name="extra" id="c2" >
+                        <label for="c2">Dienstag</label><br>
+                        <input type="checkbox" name="extra" id="c3">
+                        <label for="c3">Mittwoch</label><br>
+                        <input type="checkbox" name="extra" id="c4" >
+                        <label for="c3">Donnerstag</label><br>
+                        <input type="checkbox" name="extra" id="c5">
+                        <label for="c3">Freitag</label>
+                    </p>
+
+                <p>Bis wann sind Sie in den Ferien</p>
+                <input type="date" value="2015-11-12" min="2015-01-01" max="2015-12-30">
+                <input type="time" value="15:15" min="08:00" max="17:00">
+                <form method="post" enctype="multipart/form-data">
+
+                    <button type="submit">Submit</button>
+                </form>
         </div>
-      </div>
-    </div>
+        </div>
 
-  </main>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./script/validierung.js"></script>
 
     <footer class="bg-white">
       <div class="container py-5">
@@ -104,6 +108,7 @@
                   class="col-lg-4 col-md-6 mb-4 mb-lg-0" width="180" class="mb-3">
             <h6 class="text-uppercase font-weight-bold mb-4">Social Media</h6>
             <p class="text-muted mb 4">Hier unten verlinkt findet ihr Instagram, Snapchat und Pinterest.</p>
+
             <div class="social-btns list-inline mt-4 bg-light">
               <a type="button" class="btn-floating btn-lg btn-instagrams" href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
               <a type="button" class="btn-floating btn-lg btn-snapchat" href="https://accounts.snapchat.com/" target="_blank" title="Snapchat"><i class="fa fa-snapchat"></i></a>
@@ -127,16 +132,7 @@
         </div>
       </div>
 
-      <!-- Copyrights -->
-      <div class="bg-light py-4">
-        <div class="container text-center">
-          <p class="text-muted mb-0 py-2">© 2022 Soraya&Ambra All rights reserved.</p>
-        </div>
-      </div>
-  </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  </footer>
 </body>
 </html>
