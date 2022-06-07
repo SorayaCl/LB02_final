@@ -1,23 +1,12 @@
-// Show input error message
-
-/**
- * Beschreibung
- * @param id: Identifikation des eingegebenen Datenelement
- * @param message: Fehlermeldung
- * @returns {string}
- */
 function showError(id, message) {
     return `${id}: ${message}`;
 }
 
-// Show success outline
 function showSuccess(id) {
-    return `${id} successfully validated!`;
+    return `${id} successfully validate!`;
 }
 
-// Check email is valid
 function checkEmail(id,input) {
-    //Default: is valid
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
@@ -26,37 +15,46 @@ function checkEmail(id,input) {
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, 'Email is not valid')
+            msg: showError(id, 'Email ist nicht gültig')
         }
     }
     return result;
 }
 
-//TODO: Check article for throwing errors in node js
-// https://stackoverflow.com/questions/33086247/throwing-an-error-in-node-js
 
-// Check required fields
+function checkNumber(id,input) {
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    const re = /^\d{10}$/;
+    if (!re.test(input.trim())) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Number ist nicht gültig')
+        }
+    }
+    return result;
+}
+
+
+
 function checkRequired(id, input) {
     //Default: is valid
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
     }
-    //if input is empty ...
     if (input.trim() === '') {
-        //.. then it's not valid
         result = {
             isNotValid: true,
             msg: showError(id, `${input.toString()} is required`)
         }
     }
-    //return validation result
     return result;
 }
 
-// Check input length
 function checkLength(id, input, min, max) {
-    //Default: is valid
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
@@ -65,7 +63,7 @@ function checkLength(id, input, min, max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-            `${id} must be at least ${min} characters`)
+                `${id} must be at least ${min} characters`)
         }
     } else if (input.length > max) {
         result = {
@@ -77,12 +75,11 @@ function checkLength(id, input, min, max) {
     return result;
 }
 
-/**
- *  Export validation functions for further usage.
- *  function to export WITHOUT brackets!
- */
+
+
 module.exports = {
     checkEmail,
+    checkNumber,
     checkLength,
     checkRequired
-}
+};

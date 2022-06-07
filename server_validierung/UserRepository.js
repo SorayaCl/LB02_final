@@ -2,23 +2,13 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = class UserRepository {
-    /**
-     * file location on the server
-     */
+
     fileLoc;
 
-    /**
-     * Constructor with file where to save user-data
-     * @param fileName
-     */
     constructor(fileName) {
         this.fileLoc = path.resolve(fileName);
     }
 
-    /**
-     *
-     * @returns Promise for reading data
-     */
     read() {
         return new Promise((resolve, reject) => {
             fs.readFile(this.fileLoc, 'utf8',
@@ -36,11 +26,6 @@ module.exports = class UserRepository {
         });
     }
 
-    /**
-     *
-     * @param data
-     * @returns Promise with saved data
-     */
     save(data) {
         return new Promise((resolve, reject) => {
             fs.writeFile(this.fileLoc,
@@ -55,11 +40,3 @@ module.exports = class UserRepository {
         });
     }
 }
-
-
-//export WITHOUT beackets!
-/*
-module.exports = {
-    UserRepository : UserRepository
-}
-*/

@@ -1,5 +1,5 @@
 {
-  "name": "M307_MED19",
+  "name": "M307_ME20d",
   "version": "1.0.0",
   "description": "ICT-Modul_307",
   "main": "server.js",
@@ -17,7 +17,7 @@
     "ICT",
     "javascript"
   ],
-  "author": "daniel.garavaldi@bzz.ch",
+  "author": "clausens@bzz.ch",
   "license": "ISC",
   "dependencies": {
     "esm": "^3.2.25",

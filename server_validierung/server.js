@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
  */
 
 app.post('/register', (req, res) => {
-
+    //http status wenn Daten nicht valide sind
     const HTTP_STATUS_NO_ACCEPTABLE = 406;
     //Daten des Posts-Requests auslesen und zusätzlich eine User-id erzeugen
     let userObj = {
@@ -58,6 +58,7 @@ app.post('/register', (req, res) => {
         "username": req.body.user.username,
         "email": req.body.user.email,
         "password": req.body.user.password
+        "number": req.body.user.number
     }
 
     let result = Validation.validateUser(userObj);
